@@ -18,14 +18,14 @@ const Footer = () => {
         />
       </Helmet>
       {/* Your LinkedIn badge HTML goes here */}
-      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="m-khubaib-wasim-385884283" data-version="v1"><a class="badge-base__link LI-simple-link" className="text-gray-400 hover:text-white" target="_blank" href="https://pk.linkedin.com/in/m-khubaib-wasim-385884283?trk=profile-badge"><Linkedin size={24}/></a></div>
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="m-khubaib-wasim-385884283" data-version="v1"><a class="badge-base__link LI-simple-link" className="text-black dark:text-white hover:dark:text-white hover:text-black" target="_blank" href="https://pk.linkedin.com/in/m-khubaib-wasim-385884283?trk=profile-badge"><Linkedin size={24}/></a></div>
               
     </div>
         <a
           href="https://www.instagram.com/mkw_softwares_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-white"
+          className="text-black dark:text-white hover:dark:text-white hover:text-black"
         >
           <Instagram size={24} />
         </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             href="https://github.com/Khubaib5"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white"
+            className="text-black dark:text-white hover:dark:text-white hover:text-black"
           >
             <Github size={24} />
           </a>

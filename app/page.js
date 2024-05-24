@@ -8,6 +8,7 @@ import Projects from "../app/components/Projects"
 import IconCloudDemo from "../app/components/Tech"
 import MeteorDemo from "../app/components/Approach"
 import Footer from "../app/components/Footer"
+import Contact from "../app/components/Contact"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
     </div>
     <Projects />
     <MeteorDemo />
+    <Contact />
     <Footer />
     </div>
   );

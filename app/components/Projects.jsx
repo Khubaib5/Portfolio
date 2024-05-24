@@ -9,7 +9,7 @@ import DotPattern from "./magicui/dotPattern";
 
 const Projects = () => {
   return (
-    <div>
+    <section id="work">
       <h1 className="font-bold text-center text-4xl mb-5 dark:text-white">
         My Projects
       </h1>
@@ -145,7 +145,7 @@ const Projects = () => {
           <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </MagicCard>
       </MagicContainer>
-    </div>
+    </section>
   );
 };
 

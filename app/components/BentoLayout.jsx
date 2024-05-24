@@ -58,11 +58,13 @@ const features = [
 
 const BentoLayout = () => {
   return (
-    <BentoGrid className="lg:grid-rows-3 mb-20 px-6 ">
+    <section id="about">
+    <BentoGrid className="lg:grid-rows-3 mb-20 px-6 " >
     {features.map((feature) => (
       <BentoCard key={feature.name} {...feature}/>
     ))}
   </BentoGrid>
+    </section>
   )
 }
 
