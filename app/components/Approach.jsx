@@ -2,6 +2,9 @@ import React from "react";
 import Meteors from "../components/magicui/meteors";
 import GridPattern from "../components/magicui/grid-pattern";
 import { cn } from "../../lib/utils";
+import DotPattern from "./magicui/dotPattern";
+import AnimatedGridPattern from "../components/magicui/animated-grid-pattern"
+
 
 const MeteorDemo = () => {
   
@@ -33,6 +36,16 @@ const MeteorDemo = () => {
           navigation, and content requirements.
           </p>
         </div>
+        {/* <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.5}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      /> */}
       </div>
     </>
   );

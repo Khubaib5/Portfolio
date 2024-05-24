@@ -1,7 +1,7 @@
 import { cn } from "../../../lib/utils";
 
 
-export const BorderBeam = ({
+ const BorderBeam = ({
   className,
   size = 200,
   duration = 15,
@@ -37,3 +37,5 @@ export const BorderBeam = ({
     />
   );
 };
+
+export default BorderBeam

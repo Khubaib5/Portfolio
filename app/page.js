@@ -1,6 +1,5 @@
 "use client"
 import Hero from "../components/component/Hero";
-// import Image from "next/image";
 import DotPattern from "./components/magicui/dotPattern";
 import { cn } from "../lib/utils";
 import BentoLayout from "../app/components/BentoLayout"
@@ -9,6 +8,7 @@ import IconCloudDemo from "../app/components/Tech"
 import MeteorDemo from "../app/components/Approach"
 import Footer from "../app/components/Footer"
 import Contact from "../app/components/Contact"
+import AnimatedGridPattern from "../app/components/magicui/animated-grid-pattern"
 
 export default function Home() {
   return (
