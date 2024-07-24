@@ -2,8 +2,7 @@
 export default function Head() {
     return (
       <>
-        <title>Your App Title</title>
-        <meta name="description" content="Your app description" />
+        <meta name="description"/>
         <script
           dangerouslySetInnerHTML={{
             __html: `
