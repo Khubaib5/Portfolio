@@ -46,7 +46,7 @@ const Navbar = () => {
               className="rounded-full"
               />
               <h1 className="text-black font-semibold uppercase text-xl dark:text-white">
-                Khubaib
+                MKW Softwares
               </h1>
             </div>
           </Link>

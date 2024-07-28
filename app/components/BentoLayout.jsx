@@ -10,48 +10,73 @@ import {
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Always eager to Learn new Technologies",
-    description: "I constantly try to improve",
+    name: "MKW Softwares is a dynamic technology agency",
+    description: "Empowering businesses with innovative digital solutions.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 lg:top-20 opacity-80 w-fit sm:top-10" src="/b5.svg"/>,
+    background: (
+      <img
+        className="absolute -right-20 lg:top-20 opacity-80 w-fit sm:top-10"
+        src="/b5.svg"
+      />
+    ),
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
     Icon: InputIcon,
-    name: "Tech enthusiast with a passion for development.",
-    description: "",
+    name: "We specialize in web development, mobile app development, and AI chatbot services.",
+    description:
+      "Providing tailored, cutting-edge solutions that help businesses grow.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute lg:-top-40 w-[52rem] h-[50rem] opacity-40 -top-[15rem] md:-top-[5rem]"  src="/b1.svg"/>,
+    background: (
+      <img
+        className="absolute lg:-top-40 w-[52rem] h-[50rem] opacity-40 -top-[15rem] md:-top-[5rem]"
+        src="/b1.svg"
+      />
+    ),
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
     Icon: GlobeIcon,
-    name: "Currently starting with an agency",
-    description: "MKW Softwares, where we provide services for Web development",
+    name: "Our team is committed to delivering high-quality service.",
+    description:
+      "We are committed to delivering innovative and customized digital solutions",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-2 lg:w-fit opacity-80 h-[10rem] md:w-[30rem] md:-right-5" src="/b4.svg"/>,
+    background: (
+      <img
+        className="absolute -right-2 lg:w-fit opacity-80 h-[10rem] md:w-[30rem] md:-right-5"
+        src="/b4.svg"
+      />
+    ),
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
     Icon: CalendarIcon,
     name: "Always Punctual",
-    description: "I deliver my work before the deadlines",
+    description:
+      "We pride ourselves on punctuality, ensuring that projects are completed on time and to the highest standards.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 bottom-20 md:-right-5 opacity-80 top-5" src="/bg-3.png"/>,
+    background: (
+      <img
+        className="absolute -right-20 bottom-20 md:-right-5 opacity-80 top-5"
+        src="/bg-3.png"
+      />
+    ),
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
     Icon: BellIcon,
     name: "Do you want to start a project together?",
     description:
-      "I will prove that your decision to choose me was the best",
+      "Choosing MKW Softwares means partnering with a team committed to quality, innovation, and your business's success",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-15 opacity-50 " src="/bg7.png"/>,
+    background: (
+      <img className="absolute -right-20 -top-15 opacity-50 " src="/bg7.png" />
+    ),
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];
@@ -59,13 +84,14 @@ const features = [
 const BentoLayout = () => {
   return (
     <section id="about">
-    <BentoGrid className="lg:grid-rows-3 mb-20 px-6 " >
-    {features.map((feature) => (
-      <BentoCard key={feature.name} {...feature}/>
-    ))}
-  </BentoGrid>
+      <h1 className="text-center font-bold text-[3rem]">About MKW</h1>
+      <BentoGrid className="lg:grid-rows-3 mb-20 px-6 ">
+        {features.map((feature) => (
+          <BentoCard key={feature.name} {...feature} />
+        ))}
+      </BentoGrid>
     </section>
-  )
-}
+  );
+};
 
-export default BentoLayout
+export default BentoLayout;

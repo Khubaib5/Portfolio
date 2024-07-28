@@ -22,12 +22,22 @@ const slugs = [
   "sanity",
   "redux",
   "openai",
+  "ios",
+  "botpress",
+  "aws",
+  "graphql",
+  "flutter",
+  "swift",
+  "kotlin",
+  "ruby",
+  "python",
+  "java",
 ];
 
 function IconCloudDemo() {
   return (
     <div>
-      <h2 className="font-bold text-center text-4xl text-black dark:text-white mb-5">My Tech Stack</h2>
+      <h2 className="font-bold text-center text-4xl text-black dark:text-white mb-5">Our Tech Stack</h2>
       <div className="relative shadow-md flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
       <DotPattern
       className={cn(

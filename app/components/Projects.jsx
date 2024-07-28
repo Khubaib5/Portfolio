@@ -11,140 +11,90 @@ const Projects = () => {
   return (
     <section id="work">
       <h1 className="font-bold text-center text-4xl mb-5 dark:text-white">
-        My Projects
+        Our Projects
       </h1>
-      <MagicContainer
-        className={
-          "flex h-[90rem] w-full flex-col gap-4 lg:h-[500px] lg:flex-row mb-[5rem] md:h-[86rem]"
-        }
-      >
-        <DotPattern
-          className={cn(
-            "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]"
-          )}
-        />
-        <MagicCard
-          borderWidth={3}
-          className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] p-20 shadow-2xl"
-        >
-          <div className=" w-full flex flex-row mx-auto">
-            <img
-              src="/Pro 1.png"
-              alt="bg"
-              className="w-[34rem] absolute top-1 px-3 left-0 h-[16rem] rounded-md dark:opacity-70 md:w-[65rem]"
-            />
-            <div className=" w-full  text-white absolute bottom-5 px-3 left-0">
-              <AnimatedGradientText>
-                🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-                <span
-                  className={cn(
-                    `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
-                  )}
-                >
-                  E-Commerce Website
-                </span>
-              </AnimatedGradientText>
-              <br />
-              <p className="dark:text-white text-black md:text-center md:text-lg">
-                E-Commerce website created using Next JS, tailwindcss and Sanity
-              </p>
-              <div className="md:flex md:items-center md:justify-center">
-              <Button
-                className="mt-3"
-                onClick={() => {
-                  window.open("https://e-commerc-sanity.vercel.app/", "_blank");
-                }}
-              >
-                Check live Site
-              </Button>
-              </div>
-            </div>
-          </div>
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] p-20 shadow-2xl">
-          <div className=" w-full flex flex-row mx-auto">
-            <img
-              src="/Pro 2.png"
-              alt="bg"
-              className="w-[34rem] absolute top-1 px-3 left-0 h-[16rem] rounded-md dark:opacity-70 md:w-[65rem]"
-            />
-            <div className=" w-full  text-white absolute bottom-5 px-3 left-0">
-              <br />
-              <AnimatedGradientText>
-                🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-                <span
-                  className={cn(
-                    `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
-                  )}
-                >
-                  LinkedIn Clone
-                </span>
-              </AnimatedGradientText>
-              <br />
-              <p className="dark:text-white text-black md:text-center md:text-lg">
-                LinkedIn clone created using Next JS, Tailwindcss, Clerk, and
-                MongoDB
-              </p>
-              <div className="md:flex md:items-center md:justify-center">
+      <div className="flex justify-center items-center flex-wrap">
+        <MagicContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          <DotPattern
+            className={cn(
+              "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]"
+            )}
+          />
+          {[...Array(6)].map((_, index) => (
+            <MagicCard
+              key={index}
+              borderWidth={3}
+              className="relative flex flex-col w-full cursor-pointer overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] shadow-2xl"
+            >
+              <img
+                src={`/${index + 1}.png`}
+                alt={`Project ${index + 1}`}
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-6 text-center flex-grow">
+                <AnimatedGradientText>
+                  🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+                  <span
+                    className={cn(
+                      `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+                    )}
+                  >
+                    {index === 0
+                      ? "Lead Generation Chatbot"
+                      : index === 1
+                      ? "Customer Support ChatBot"
+                      : index === 2
+                      ? "Meal Plan Chatbot"
+                      : index === 3
+                      ? "AI Persona Chatbot"
+                      : index === 4
+                      ? "GYM Support Chatbot"
+                      : "Lead generation chatbot"}
+                  </span>
+                </AnimatedGradientText>
+                <p className="dark:text-white text-black md:text-center md:text-lg mt-2">
+                  {index === 0
+                    ? "This chatbot streamlines customer engagement by capturing leads and setting appointments seamlessly, using Calendly integration."
+                    : index === 1
+                    ? "This chatbot provides round-the-clock assistance for your e-commerce store, answering inquiries, tracking orders, and resolving issues instantly."
+                    : index === 2
+                    ? " This chatbot creates customized meal plans tailored to your dietary preferences and goals, helping you eat healthier and save time."
+                    : index === 3
+                    ? "This AI Persona chatbot, inspired by Ali Abdaal, provides expert advice on productivity and financial freedom, offering actionable insights and strategies to help you optimize your time and achieve your financial goals."
+                    : index === 4
+                    ? "Our Gym Support Bot delivers comprehensive information about gym, including membership plans, class schedules, and location details. Get instant answers to your fitness queries and stay informed about gym timings and available services."
+                    : "This chatbot streamlines customer engagement by capturing highly qualifying leads and saving in database. "}
+                </p>
                 <Button
                   className="mt-3"
                   onClick={() => {
                     window.open(
-                      "https://linked-in-clone-phi-ivory.vercel.app/",
+                      index === 0
+                        ? "https://mediafiles.botpress.cloud/e03ae7dc-96eb-4d2d-8150-c2a5426613df/webchat/bot.html"
+                        : index === 1
+                        ? "https://mediafiles.botpress.cloud/494652a0-548f-4a3b-815d-cdcaab6c73d2/webchat/bot.html"
+                        : index === 2
+                        ? "https://mediafiles.botpress.cloud/aa6aa87c-495e-46f8-bcef-fb742685a3c8/webchat/bot.html"
+                        : index === 3
+                        ? "https://www.chatbase.co/chatbot-iframe/GbgG2YNPVERHOqBZ8A2O7"
+                        : index === 4
+                        ? "https://www.chatbase.co/chatbot-iframe/qgTpjQgFFIKwaKk2spZmh"
+                        : "https://mediafiles.botpress.cloud/270d7db1-3e2f-4f71-aefe-61f945259f91/webchat/bot.html",
                       "_blank"
                     );
                   }}
                 >
-                  Check live Site
+                  {index === 0
+                     ?"Check out the Bot"
+                     :"Check out the Bot"
+                    }
                 </Button>
               </div>
-            </div>
-          </div>
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-        <MagicCard className="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] p-20 shadow-2xl">
-          <div className=" w-full flex flex-row mx-auto">
-            <img
-              src="/Pro 3.png"
-              alt="bg"
-              className="w-[34rem] absolute top-1 px-3 left-0 h-[16rem] rounded-md dark:opacity-70 md:w-[65rem]"
-            />
-            <div className=" w-full  text-white absolute bottom-5 px-3 left-0">
-              <br />
-              <AnimatedGradientText>
-                🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-                <span
-                  className={cn(
-                    `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
-                  )}
-                >
-                  Job Portal
-                </span>
-              </AnimatedGradientText>
-              <br />
-              <p className="dark:text-white text-black md:text-center md:text-lg">
-                Job portal created using Next JS, Tailwindcss, Prisma, and
-                MongoDB
-              </p>
-              <div className="md:flex md:items-center md:justify-center">
-              <Button
-                className="mt-3 "
-                onClick={() => {
-                  window.open(
-                    "https://job-board-ruby-theta.vercel.app/",
-                    "_blank"
-                  );
-                }}
-              >
-                Check live Site
-              </Button>
-              </div>
-            </div>
-          </div>
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-        </MagicCard>
-      </MagicContainer>
+              <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+            </MagicCard>
+          ))}
+        </MagicContainer>
+      </div>
     </section>
   );
 };

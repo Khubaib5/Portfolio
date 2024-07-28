@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <section id="contact" className="flex justify-center items-center mb-10 px-4 sm:px-6 lg:px-8">
       <div
-        className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden"
+        className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden border border-white rounded-md"
       >
         <motion.div
           className="flex-1 bg-black p-8 lg:w-[60rem] md:w-[48rem] rounded-md w-full max-w-3xl mx-auto shadow-lg shadow-black"
@@ -119,7 +119,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-white"
+              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold border border-white"
             >
               {loading ? "Sending..." : "Send"}
             </button>

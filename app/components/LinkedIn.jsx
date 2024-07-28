@@ -19,16 +19,10 @@ const LinkedInBadge = () => {
 
   return (
     <div>
-      <div className="badge-base LI-profile-badge"
-           data-locale="en_US"
-           data-size="medium"
-           data-theme="dark"
-           data-type="VERTICAL"
-           data-vanity="m-khubaib-wasim-385884283"
-           data-version="v1">
+      <div className="badge-base LI-profile-badge">
         <a className="badge-base__link LI-simple-link"
             target="_blank"
-            href="https://pk.linkedin.com/in/m-khubaib-wasim-385884283?trk=profile-badge" >
+            href="https://www.linkedin.com/in/m-khubaib-wasim/" >
          <LinkedinIcon />
         </a>
       </div>
