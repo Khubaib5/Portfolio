@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { MagicCard, MagicContainer } from "../components/magicui/magic-card";
-// import { ChevronRight } from "lucide-react";
 import AnimatedGradientText from "../components/magicui/animated-gradient-text.";
 import { cn } from "../../lib/utils";
 import { Button } from "../../components/ui/button";
@@ -14,7 +13,7 @@ const Projects = () => {
         Our Projects
       </h1>
       <div className="flex justify-center items-center flex-wrap">
-        <MagicContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <MagicContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 w-full">
           <DotPattern
             className={cn(
               "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]"
@@ -85,9 +84,8 @@ const Projects = () => {
                   }}
                 >
                   {index === 0
-                     ?"Check out the Bot"
-                     :"Check out the Bot"
-                    }
+                    ? "Check out the Bot"
+                    : "Check out the Bot"}
                 </Button>
               </div>
               <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />

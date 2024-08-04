@@ -1,4 +1,3 @@
-// components/BookingCalendar.js
 import { useEffect } from 'react';
 
 const BookingCalendar = () => {
@@ -17,17 +16,15 @@ const BookingCalendar = () => {
   }, []);
 
   return (
-    <div className="flex justify-around items-center m-5" id='booking'>
-      <div
-        className="lemcal-embed-booking-calendar"
-        data-user="usr_sSRqik9jzL6zxN4uZ"
-        data-meeting-type="met_yAvvNAGN9rrtDoC96"
-      ></div>
-      <div
-        className="lemcal-embed-booking-calendar"
-        data-user="usr_sSRqik9jzL6zxN4uZ"
-        data-meeting-type="met_kigosxKks4zsfocAP"
-      ></div>
+    <div className="flex flex-col items-center justify-center overflow-hidden py-6">
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-sm">
+        <div
+          className="lemcal-embed-booking-calendar w-full max-w-[300px] box-border"
+          data-user="usr_sSRqik9jzL6zxN4uZ"
+          data-meeting-type="met_yAvvNAGN9rrtDoC96"
+        ></div>
+        
+      </div>
       <script src="https://cdn.lemcal.com/lemcal-integrations.min.js" defer></script>
     </div>
   );
