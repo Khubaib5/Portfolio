@@ -8,6 +8,7 @@ import IconCloudDemo from "../app/components/Tech";
 import MeteorDemo from "../app/components/Approach";
 import Footer from "../app/components/Footer";
 import Contact from "../app/components/Contact";
+import BookingCalendar from "../app/components/BookingCalendar";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         className={cn(
           "[mask-image:linear-gradient(to_top_left,white,transparent,transparent)] "
         )}
-      />     
+      />
       <Hero />
       <BentoLayout />
 
@@ -45,6 +46,7 @@ export default function Home() {
       </div>
       <Projects />
       <MeteorDemo />
+      <BookingCalendar />
       <Contact />
       <Footer />
     </div>

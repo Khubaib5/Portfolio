@@ -24,7 +24,7 @@ const features = [
   },
   {
     Icon: InputIcon,
-    name: "We specialize in web development, mobile app development, and AI chatbot services.",
+    name: "We specialize in AI chatbot services like: Lead generation Chatbots",
     description:
       "Providing tailored, cutting-edge solutions that help businesses grow.",
     href: "/",

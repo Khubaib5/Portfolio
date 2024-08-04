@@ -29,7 +29,7 @@ const Projects = () => {
               <img
                 src={`/${index + 1}.png`}
                 alt={`Project ${index + 1}`}
-                className="w-full h-40 object-cover"
+                className="w-full h-60 object-cover"
               />
               <div className="p-6 text-center flex-grow">
                 <AnimatedGradientText>
