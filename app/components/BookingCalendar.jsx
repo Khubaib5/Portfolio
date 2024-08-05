@@ -16,7 +16,7 @@ const BookingCalendar = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden py-6">
+    <div className="flex flex-col items-center justify-center overflow-hidden py-6" id="booking">
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-sm">
         <div
           className="lemcal-embed-booking-calendar w-full max-w-[300px] box-border"
