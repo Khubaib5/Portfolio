@@ -41,7 +41,7 @@ const Projects = () => {
                     {index === 0
                       ? "Lead Generation Chatbot"
                       : index === 1
-                      ? "Customer Support ChatBot"
+                      ? "Appointment setting ChatBot"
                       : index === 2
                       ? "Meal Plan Chatbot"
                       : index === 3
@@ -55,7 +55,7 @@ const Projects = () => {
                   {index === 0
                     ? "This chatbot streamlines customer engagement by capturing leads and setting appointments seamlessly, using Calendly integration."
                     : index === 1
-                    ? "This chatbot provides round-the-clock assistance for your e-commerce store, answering inquiries, tracking orders, and resolving issues instantly."
+                    ? "This chatbot efficiently manages your appointment scheduling process, handling client bookings, sending reminders, and reducing no-shows, all while providing 24/7 support."
                     : index === 2
                     ? " This chatbot creates customized meal plans tailored to your dietary preferences and goals, helping you eat healthier and save time."
                     : index === 3
@@ -71,7 +71,7 @@ const Projects = () => {
                       index === 0
                         ? "https://mediafiles.botpress.cloud/e03ae7dc-96eb-4d2d-8150-c2a5426613df/webchat/bot.html"
                         : index === 1
-                        ? "https://mediafiles.botpress.cloud/494652a0-548f-4a3b-815d-cdcaab6c73d2/webchat/bot.html"
+                        ? "https://mediafiles.botpress.cloud/d4bf01dd-086f-4417-b202-ed97e90d5c0b/webchat/bot.html"
                         : index === 2
                         ? "https://mediafiles.botpress.cloud/aa6aa87c-495e-46f8-bcef-fb742685a3c8/webchat/bot.html"
                         : index === 3
