@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
 // import Head from "next/head";
-import Head from "./head";
+import BotpressWebchat from "./head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Head />
+        <BotpressWebchat />
         <ThemeProvider defaultTheme="dark" attribute="class">
           <Navbar />
           {children}
