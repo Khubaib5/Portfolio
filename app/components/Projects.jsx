@@ -53,16 +53,16 @@ const Projects = () => {
                 </AnimatedGradientText>
                 <p className="dark:text-white text-black md:text-center md:text-lg mt-2">
                   {index === 0
-                    ? "This chatbot streamlines customer engagement by capturing leads and setting appointments seamlessly, using Calendly integration."
+                    ? "This AI chatbot enhances customer engagement by capturing leads and setting appointments via Calendly, automatically saving the data to a CSV file. Priced at $3,000, it’s a valuable tool for streamlining lead management."
                     : index === 1
-                    ? "This chatbot efficiently manages your appointment scheduling process, handling client bookings, sending reminders, and reducing no-shows, all while providing 24/7 support."
+                    ? "This chatbot streamlines your appointment scheduling by handling client bookings, sending reminders, and reducing no-shows, all while offering 24/7 support. Priced at $1,000, it’s a cost-effective solution for efficient appointment management."
                     : index === 2
-                    ? " This chatbot creates customized meal plans tailored to your dietary preferences and goals, helping you eat healthier and save time."
+                    ? " This AI-powered chatbot creates personalized meal plans based on your dietary preferences and goals, helping you eat healthier and save time. Priced at $2,000, it offers a smart solution for customized nutrition."
                     : index === 3
-                    ? "This AI Persona chatbot, inspired by Ali Abdaal, provides expert advice on productivity and financial freedom, offering actionable insights and strategies to help you optimize your time and achieve your financial goals."
+                    ? "This AI Persona chatbot, inspired by Ali Abdaal, delivers expert advice on productivity and financial freedom, offering actionable insights to help you optimize your time and achieve your financial goals. Priced at $2,600, it reflects the extensive knowledge required to train the bot."
                     : index === 4
-                    ? "Our Gym Support Bot delivers comprehensive information about gym, including membership plans, class schedules, and location details. Get instant answers to your fitness queries and stay informed about gym timings and available services."
-                    : "This chatbot streamlines customer engagement by capturing highly qualifying leads and saving in database. "}
+                    ? "Our Gym Support Bot provides comprehensive information about gym memberships, class schedules, location details, and more. Get instant answers to your fitness queries and stay updated on gym timings and services. Priced at $2,500, this bot offers complete gym-related assistance."
+                    : "This chatbot enhances customer engagement by capturing highly qualified leads and saving them directly to a database. Priced at $3,000, it’s a powerful tool for optimizing lead management."}
                 </p>
                 <Button
                   className="mt-3"
