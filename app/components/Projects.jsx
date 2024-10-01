@@ -48,7 +48,7 @@ const Projects = () => {
                       ? "AI Persona Chatbot"
                       : index === 4
                       ? "GYM Support Chatbot"
-                      : "Lead generation chatbot"}
+                      : "Dental AI Assistant"}
                   </span>
                 </AnimatedGradientText>
                 <p className="dark:text-white text-black md:text-center md:text-lg mt-2">
@@ -62,7 +62,7 @@ const Projects = () => {
                     ? "This AI Persona chatbot, inspired by Ali Abdaal, delivers expert advice on productivity and financial freedom, offering actionable insights to help you optimize your time and achieve your financial goals. Priced at $2,600, it reflects the extensive knowledge required to train the bot."
                     : index === 4
                     ? "Our Gym Support Bot provides comprehensive information about gym memberships, class schedules, location details, and more. Get instant answers to your fitness queries and stay updated on gym timings and services. Priced at $2,500, this bot offers complete gym-related assistance."
-                    : "This chatbot enhances customer engagement by capturing highly qualified leads and saving them directly to a database. Priced at $3,000, it’s a powerful tool for optimizing lead management."}
+                    : "This AI-powered chatbot is designed specifically for dental practices, enhancing patient engagement by capturing highly qualified leads and saving them directly to a database. Priced at $3,000, it’s a powerful solution for optimizing patient appointment scheduling and lead management."}
                 </p>
                 <Button
                   className="mt-3"
@@ -78,8 +78,7 @@ const Projects = () => {
                         ? "https://www.chatbase.co/chatbot-iframe/GbgG2YNPVERHOqBZ8A2O7"
                         : index === 4
                         ? "https://www.chatbase.co/chatbot-iframe/qgTpjQgFFIKwaKk2spZmh"
-                        : "https://mediafiles.botpress.cloud/270d7db1-3e2f-4f71-aefe-61f945259f91/webchat/bot.html",
-                      "_blank"
+                        : "https://mediafiles.botpress.cloud/9ec1b023-9fa8-4fa8-b6f4-b4ccfb6a43c9/webchat/bot.html"
                     );
                   }}
                 >
