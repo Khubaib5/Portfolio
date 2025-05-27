@@ -10,8 +10,8 @@ import {
 const features = [
   {
     Icon: FileTextIcon,
-    name: "MKW Softwares is a dynamic technology agency",
-    description: "Empowering businesses with innovative digital solutions.",
+    name: "🚀 Automate Like a Savage with AI-Powered Systems Built for Growth",
+    description: "At MKW Softwares, we build custom AI agents that do the boring sales work for you — so you can close more and stress less.",
     href: "/",
     cta: "Learn more",
     background: (
@@ -24,9 +24,9 @@ const features = [
   },
   {
     Icon: InputIcon,
-    name: "We specialize in AI chatbot services like: Lead generation Chatbots",
+    name: "🔥 Why Clients Work With Us:",
     description:
-      "Providing tailored, cutting-edge solutions that help businesses grow.",
+      "✔️ You get real results — not just “cool tech",
     href: "/",
     cta: "Learn more",
     background: (
@@ -39,9 +39,9 @@ const features = [
   },
   {
     Icon: GlobeIcon,
-    name: "Our team is committed to delivering high-quality service.",
+    name: "🛠️ We Build. You Scale.",
     description:
-      "We are committed to delivering innovative and customized digital solutions",
+      "We set it up, test it live, tweak it, and support it — so it works for your offer, not someone else's template.",
     href: "/",
     cta: "Learn more",
     background: (
@@ -69,7 +69,7 @@ const features = [
   },
   {
     Icon: BellIcon,
-    name: "Do you want to start a project together?",
+    name: "Ready to stop babysitting leads and start closing more?",
     description:
       "Choosing MKW Softwares means partnering with a team committed to quality, innovation, and your business's success",
     href: "/",
